@@ -14,19 +14,21 @@
     <title>Professional Portfolio</title>
   </head>
   <body>
+      <header>
     <div class="jumbotron jumbotron-fluid">
-      <div class="container">
-        <h1 class="display-4">Nathaniel Turcotte</h1>
-        <a href="./Nathaniel Turcotte Resume.pdf" target="_blank" class="btn btn-primary">My Resume</a>
+        <!-- pdf link -->
+        <a href="./Nathaniel Turcotte Resume.pdf" target="_blank" class="btn headBtns">My Resume</a>
         <!-- Button trigger modal -->
         <button
           type="button"
-          class="btn btn-primary"
+          class="btn headBtns"
           data-toggle="modal"
           data-target="#exampleModal"
         >
           Contact Me
         </button>
+      <div class="container">
+        <h1 class="display-4">Nathaniel Turcotte</h1>
         <img
           src="./assets/images/20210615_092201.jpg"
           alt="headshot"
@@ -37,43 +39,44 @@
           My name is Nathaniel and I'm an aspiring web developer. After almost a
           decade working dead end jobs, I've decided to take control of my
           trajectory in life and learn the skills required to code. I'm enrolled
-          in the University of Washington Coding Bootcamp, and hopefully on
+          in the University of Washington Coding Bootcamp, and hopefully upon
           completion of the program I will be able to start working in the
           industry. On this webpage you can see my current portfolio, as well as
           several ways to contact me.
         </p>
       </div>
     </div>
+</header>
 
+<main class="container">
     <!-- My Projects -->
-    <div>
-        <h3>My Projects</h3>
-        <div class="card" style="width: 18rem;">
+    <div class="row justify-content-center" id="projects">
+        <h3 class="col-12 text-center">My Projects</h3>
+        <div class="card col-lg-4 col-md-6 col-sm-12 customCards m-2">
             <img src="./assets/images/games-for-you-sc.png" class="card-img-top" alt="games for you screenshot">
             <div class="card-body">
               <h5 class="card-title">Games For You</h5>
               <p class="card-text">A web application to help find video or board games based on search inputs.</p>
-              <a href="https://delizoderek.github.io/Games-for-you/" class="btn btn-primary" target="_blank">View</a>
+              <a href="https://delizoderek.github.io/Games-for-you/" class="btn customBtns" target="_blank">View</a>
             </div>
           </div>
-          <div class="card" style="width: 18rem;">
+          <div class="card col-lg-4 col-md-6 col-sm-12 customCards m-2">
             <img src="./assets/images/pwgen-sc.png" class="card-img-top" alt="password generator screenshot">
             <div class="card-body">
               <h5 class="card-title">Password Generator</h5>
               <p class="card-text">A web application to generate a password based on user inputs</p>
-              <a href="https://thehebi.github.io/password-generator/" class="btn btn-primary" target="_blank">View</a>
+              <a href="https://thehebi.github.io/password-generator/" class="btn customBtns" target="_blank">View</a>
             </div>
           </div>
-          <div class="card" style="width: 18rem;">
+          <div class="card col-lg-4 col-md-6 col-sm-12 customCards m-2">
             <img src="./assets/images/wd-sc.png" class="card-img-top" alt="weather dashboard screenshot">
             <div class="card-body">
               <h5 class="card-title">Weather Dashboard</h5>
               <p class="card-text">A web application to show the current weather and five day forecast for the city input by the user.</p>
-              <a href="https://thehebi.github.io/weather-dashboard/" class="btn btn-primary" target="_blank">View</a>
+              <a href="https://thehebi.github.io/weather-dashboard/" class="btn customBtns" target="_blank">View</a>
             </div>
           </div>
     </div>
-
     <!-- Modal -->
     <div
       class="modal fade"
@@ -83,7 +86,7 @@
       aria-hidden="true"
     >
       <div class="modal-dialog">
-        <div class="modal-content">
+        <div class="modal-content modalBg">
           <div class="modal-header">
             <h5 class="modal-title" id="exampleModalLabel">Contact Me</h5>
           </div>
@@ -98,7 +101,7 @@
           <div class="modal-footer">
             <button
               type="button"
-              class="btn btn-secondary"
+              class="btn customBtns"
               data-dismiss="modal"
             >
               Close
@@ -107,6 +110,8 @@
         </div>
       </div>
     </div>
+</main>
+
     <script
       src="https://code.jquery.com/jquery-3.6.0.min.js"
       integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="

@@ -1,0 +1,34 @@
+:root{
+    --main-bg: #5f2f14;
+    --secondary-bg: #1297bd;
+    --btns: #1ad7d8;
+    --text: #f3f1f1;
+}
+body{
+    background: var(--main-bg);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: var(--text);
+}
+li{
+    list-style-type: none;
+}
+.headBtns{
+    float: right;
+    margin: 5px;
+    background-color: var(--btns);
+    color: var(--text);
+}
+.jumbotron{
+    padding-top: 5px;
+    background-color: var(--secondary-bg);
+}
+.customCards{
+    background-color: var(--secondary-bg);
+}
+.customBtns{
+    background-color: var(--btns);
+    color: var(--text);
+}
+.modalBg{
+    background-color: var(--secondary-bg);
+}
