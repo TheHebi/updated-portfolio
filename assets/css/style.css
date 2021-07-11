@@ -32,3 +32,10 @@ li{
 .modalBg{
     background-color: var(--secondary-bg);
 }
+.headshot{
+    float: right;
+}
+.modalLink{
+    color: var(--text);
+    text-decoration: none;
+}
