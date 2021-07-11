@@ -9,18 +9,22 @@ body{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: var(--text);
 }
+ul{
+    padding-left: 0;
+}
 li{
     list-style-type: none;
 }
 .headBtns{
     float: right;
-    margin: 5px;
+    margin: 10px;
     background-color: var(--btns);
     color: var(--text);
 }
 .jumbotron{
     padding-top: 5px;
     background-color: var(--secondary-bg);
+    margin-bottom: 0;
 }
 .customCards{
     background-color: var(--secondary-bg);
@@ -38,4 +42,7 @@ li{
 .modalLink{
     color: var(--text);
     text-decoration: none;
+}
+.cardImg{
+    padding-top: 10px;
 }
