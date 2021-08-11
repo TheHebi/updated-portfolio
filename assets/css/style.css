@@ -21,6 +21,12 @@ li{
     background-color: var(--btns);
     color: var(--text);
 }
+.btn{
+    border-radius: 100px !important;
+}
+.card{
+    border-radius: 25px !important;
+}
 .jumbotron{
     padding-top: 5px;
     background-color: var(--secondary-bg);
